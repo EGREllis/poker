@@ -10,8 +10,18 @@
     <servlet-class>net.poker.web.servlet.SignInServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>sign_up_page</servlet-name>
+    <jsp-file>sign_up.jsp</jsp-file>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>sign_in_servlet</servlet-name>
     <url-pattern>/sign_in.html</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>sign_up_page</servlet-name>
+    <url-pattern>/sign_up.html</url-pattern>
   </servlet-mapping>
 </web-app>
