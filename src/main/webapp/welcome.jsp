@@ -1,8 +1,8 @@
 <html>
     <head>
-        <title></title>
+        <title>Poker welcome page</title>
     </head>
     <body>
-        <p>Welcome user!</p>
+        <p>Welcome user !</p>
     </body>
 </html>
