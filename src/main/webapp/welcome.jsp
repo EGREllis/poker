@@ -5,9 +5,9 @@
         <title>Poker welcome page</title>
     </head>
     <body>
-        <p>Welcome <c:out value="out" />!</p>
         <p>Welcome <c:out value="${requestScope.user_name}" />!</p>
-        <p>Welcome <c:out value="${sessionScope.user_name}" />!</p>
-        <p>Welcome <c:out value="${user_name}" />!</p>
+        <table>
+            <tr><td><a href="./poker_table.html">Poker table</a></td></tr>
+        </table>
     </body>
 </html>

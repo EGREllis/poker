@@ -24,6 +24,11 @@
     <servlet-class>net.poker.web.servlet.RegisterServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>poker_table_page</servlet-name>
+    <jsp-file>poker_table.jsp</jsp-file>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>sign_in_servlet</servlet-name>
     <url-pattern>/sign_in.html</url-pattern>
@@ -37,5 +42,10 @@
   <servlet-mapping>
     <servlet-name>register_servlet</servlet-name>
     <url-pattern>/register.html</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>poker_table_page</servlet-name>
+    <url-pattern>/poker_table.html</url-pattern>
   </servlet-mapping>
 </web-app>
