@@ -3,7 +3,11 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>Poker Web Application</display-name>
+
+  <listener>
+    <listener-class>net.poker.web.listener.ApplicationStartListener</listener-class>
+  </listener>
 
   <servlet>
     <servlet-name>sign_in_servlet</servlet-name>
@@ -15,6 +19,11 @@
     <jsp-file>sign_up.jsp</jsp-file>
   </servlet>
 
+  <servlet>
+    <servlet-name>register_servlet</servlet-name>
+    <servlet-class>net.poker.web.servlet.RegisterServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>sign_in_servlet</servlet-name>
     <url-pattern>/sign_in.html</url-pattern>
@@ -23,5 +32,10 @@
   <servlet-mapping>
     <servlet-name>sign_up_page</servlet-name>
     <url-pattern>/sign_up.html</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>register_servlet</servlet-name>
+    <url-pattern>/register.html</url-pattern>
   </servlet-mapping>
 </web-app>
