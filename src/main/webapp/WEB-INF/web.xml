@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>sign_in_servlet</servlet-name>
+    <servlet-class>net.poker.web.servlet.SignInServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>sign_in_servlet</servlet-name>
+    <url-pattern>/sign_in.html</url-pattern>
+  </servlet-mapping>
 </web-app>
