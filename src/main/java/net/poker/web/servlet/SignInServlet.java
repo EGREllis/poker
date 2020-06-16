@@ -19,6 +19,8 @@ public class SignInServlet extends HttpServlet {
         if (userId > 0) {
             HttpSession session = request.getSession(true);
             session.setAttribute(Constants.USER_ID_KEY, userId);
+            session.setAttribute(Constants.USERNAME, username);
+            request.setAttribute(Constants.USERNAME, username);
             request.getRequestDispatcher("/welcome.jsp").forward(request, response);
         } else {
             request.getRequestDispatcher("/index.jsp").forward(request, response);
