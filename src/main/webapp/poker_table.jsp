@@ -81,7 +81,10 @@
             <path d="M 290 485 L 300 500 L 310 485 Z" fill="black" stroke="black" stroke-width="1" />
 
             <!-- Spade -->
-            
+            <circle cx="710" cy="500" r="10" fill="black" />
+            <circle cx="690" cy="500" r="10" fill="black" />
+            <path d="M 680 500 L 700 475 L 720 500 Z" fill="black" />
+            <path d="M 680 525 L 700 500 L 720 525 Z" fill="black" />
         </svg>
     </body>
 </html>
